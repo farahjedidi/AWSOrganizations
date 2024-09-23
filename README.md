@@ -29,7 +29,7 @@ In this demo, we will set up an AWS Organization using the <strong>GENERAL</stro
    
 ![Screenshot](https://imgur.com/xjzt5eJ.png)
 <br/>
-### <h3>2. Invite the PRODUCTION Account using the Management Account</h3>
+### <h3>2. Invite the PRODUCTION Account to Join as a MEMBER Using the Management Account </h3>
 1. Log in to the <strong>Production</strong> account as iamadmin.
 2. Copy the Production Account ID.
  <br/>
