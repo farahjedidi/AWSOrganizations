@@ -11,7 +11,7 @@ In this demo, we will set up an AWS Organization using the <strong>GENERAL</stro
    - These accounts will be used for all future demos.
 
 2. **Configure Billing and Security:**
-   - Set up <strong>Billing Alerts</strong> to monitor and control expenses. *(For setting a budget cap in the Billing Dashboard, refer to the AWS Billing and Cost Management documentation.)*
+   - Set up <strong>Billing Alerts</strong> to monitor and control expenses. 
    - Enabled <strong>Multi-Factor Authentication (MFA)</strong> on the root accounts for both GENERAL and PRODUCTION.
 
 3. **Create IAM Admin Users:**
