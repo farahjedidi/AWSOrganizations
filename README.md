@@ -25,50 +25,62 @@ In this demo, we will set up an AWS Organization using the <strong>GENERAL</stro
 ### <h3>1. Set Up the Management Account</h3>
 1. Open AWS Organizations in the GENERAL account.
 2. Click on <strong>"Create an Organization"</strong>.
+   
    <br/>
    
 ![Screenshot](https://imgur.com/xjzt5eJ.png)
+
 <br/>
+
 ### <h3>2. Invite the PRODUCTION Account to Join as a MEMBER Using the Management Account </h3>
 1. Log in to the <strong>Production</strong> account as iamadmin.
 2. Copy the Production Account ID.
+   
  <br/>
  
 ![Screenshot](https://imgur.com/m0XXGVK.png)
 
 <br/>
-4. Go back to the GENERAL account, click <strong>"Add an AWS account"</strong> > <strong>"Invite an existing AWS account"</strong>.
-5. Paste the Production Account ID, add a message if needed, and click <strong>"Send Invitation"</strong>.
+
+3. Go back to the GENERAL account, click <strong>"Add an AWS account"</strong> > <strong>"Invite an existing AWS account"</strong>.
+4. Paste the Production Account ID, add a message if needed, and click <strong>"Send Invitation"</strong>.
+
 <br/>
 
 ![Screenshot](https://imgur.com/DqS5zyH.png)
+
 <br/>
 
-6. In the Production account, navigate to <strong>AWS Organizations</strong> > <strong>Invitations</strong> > <strong>Accept Invitation</strong>.
+5. In the Production account, navigate to <strong>AWS Organizations</strong> > <strong>Invitations</strong> > <strong>Accept Invitation</strong>.
+   
    <br/>
    
 ![Screenshot](https://imgur.com/Pcp2Rzf.png)
+
 <br/>
 
 ### <h3>3. Create a Role for Cross-Account Access</h3>
 1. In the Production account, go to <strong>IAM</strong> > <strong>Roles</strong> > <strong>Create Role</strong>.
 2. Choose <strong>AWS Account</strong> as the trusted entity.
 3. Select <strong>Another AWS Account</strong> and enter the GENERAL/Management Account ID.
+   
    <br/>
    
    ![Screenshot](https://imgur.com/hagtGVh.png)
    
    <br/>
    
-5. Assign the <strong>AdministratorAccess</strong> permission.
+4. Assign the <strong>AdministratorAccess</strong> permission.
+   
    <br/>
    
    ![Screenshot](https://imgur.com/wkj3eP4.png)
    
    <br/>
-6. Name the role `OrganizationAccountAccessRole` and click <strong>Next</strong>.
+5. Name the role `OrganizationAccountAccessRole` and click <strong>Next</strong>.
 
-7. Navigate to <strong>IAM</strong> > <strong>Roles</strong> > `OrganizationAccountAccessRole` > <strong>Trust Relationships</strong>. The GENERAL/Management Account ID should be listed as a trusted entity.
+6. Navigate to <strong>IAM</strong> > <strong>Roles</strong> > `OrganizationAccountAccessRole` > <strong>Trust Relationships</strong>. The GENERAL/Management Account ID should be listed as a trusted entity.
+   
    <br/>
    
 ![Screenshot](https://imgur.com/WYZgRFh.png)
@@ -80,14 +92,16 @@ In this demo, we will set up an AWS Organization using the <strong>GENERAL</stro
 2. In the GENERAL account, click on the main dropdown and select <strong>"Switch Role"</strong>.
 3. Enter the Production Account ID and the role name `OrganizationAccountAccessRole`.
 4. Set a display name (e.g., "PROD") and a color (e.g., Red).
-5. Click <strong>Create</strong> / <strong>Switch Role</strong>.
+5. Click <strong>Switch Role</strong>.
+   
 <br/>
 
 ![Screenshot](https://imgur.com/4u4Xv7h.png)
 
 <br/>
 
-7. We will now see the display name "PROD" in the top right menu. We can switch back to the GENERAL account as needed.
+6. We will now see the display name "PROD" in the top right menu. We can switch back to the GENERAL account as needed.
+   
 <br/>
 
 ![Screenshot](https://imgur.com/UYH7v4W.png)
@@ -98,6 +112,7 @@ In this demo, we will set up an AWS Organization using the <strong>GENERAL</stro
 1. In the GENERAL account, go to <strong>AWS Organizations</strong> > <strong>Add Account</strong> > <strong>Create an AWS Account</strong>.
 2. Name the new account and create it.
 3. Once the new account is created, copy its account ID.
+   
 <br/>
 
 ![Screenshot](https://imgur.com/8DRzMRE.png)
@@ -105,6 +120,7 @@ In this demo, we will set up an AWS Organization using the <strong>GENERAL</stro
 <br/>
 
 4. Switch to the new account by going to the main dropdown > <strong>Switch Role</strong> > enter the new account ID > use the same role name `OrganizationAccountAccessRole` > click <strong>Switch Role</strong>.
+   
 <br/>
 
 ![Screenshot](https://imgur.com/alYixAi.png)
