@@ -128,7 +128,7 @@ In this demo, we will set up an AWS Organization using the <strong>GENERAL</stro
 <br/>
 
 ## <h2>Conclusion</h2>
-We have successfully set up an AWS Organization with multiple member accounts. The **GENERAL** account became the **MASTER** account for the organization. We invited the **PRODUCTION** account as a **MEMBER** account and created the **DEVELOPMENT** account as an additional **MEMBER** account.
+We have successfully set up an AWS Organization with multiple member accounts. The **GENERAL** account became the **MASTER/MANAGEMENT** account for the organization. We invited the **PRODUCTION** account as a **MEMBER** account and created the **DEVELOPMENT** account as an additional **MEMBER** account.
 And to enable secure cross-account management, we created an `OrganizationAccountAccessRole` in the **PRODUCTION** account. This role allowed us to seamlessly switch between accounts and manage resources across the organization.
 
 
