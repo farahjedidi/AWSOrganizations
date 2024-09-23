@@ -38,14 +38,13 @@ In this demo, we will set up an AWS Organization using the <strong>GENERAL</stro
 
 <br/>
 4. Go back to the GENERAL account, click <strong>"Add an AWS account"</strong> > <strong>"Invite an existing AWS account"</strong>.
-
 5. Paste the Production Account ID, add a message if needed, and click <strong>"Send Invitation"</strong>.
 <br/>
 
 ![Screenshot](https://imgur.com/DqS5zyH.png)
 <br/>
 
-5. In the Production account, navigate to <strong>AWS Organizations</strong> > <strong>Invitations</strong> > <strong>Accept Invitation</strong>.
+6. In the Production account, navigate to <strong>AWS Organizations</strong> > <strong>Invitations</strong> > <strong>Accept Invitation</strong>.
    <br/>
    
 ![Screenshot](https://imgur.com/Pcp2Rzf.png)
