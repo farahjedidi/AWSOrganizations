@@ -16,7 +16,7 @@ In this demo, we will set up an AWS Organization using the <strong>GENERAL</stro
 
 3. **Create IAM Admin Users:**
    - Using the <strong>IAM</strong> service, created an `iamadmin` user for each account.
-   - Assigned `AdministratorAccess` permissions to the `iamadmin` user.
+   - Assigned `AdministratorAccess` permissions to each `iamadmin` user.
    - Enabled <strong>Multi-Factor Authentication (MFA)</strong> on for each `iamadmin` user.
    - <strong>Access Keys</strong> were generated for each `iamadmin` user.
 
