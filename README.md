@@ -33,9 +33,10 @@ In this demo, we will set up an AWS Organization using the <strong>GENERAL</stro
 1. Log in to the <strong>Production</strong> account as iamadmin.
 2. Copy the Production Account ID.
  <br/>
-   ![Screenshot](https://imgur.com/m0XXGVK.png)
-   <br/>
-   
+ 
+![Screenshot](https://imgur.com/m0XXGVK.png)
+
+<br/>
 4. Go back to the GENERAL account, click <strong>"Add an AWS account"</strong> > <strong>"Invite Existing Account"</strong>.
 5. Paste the Production Account ID, add a message if needed, and click <strong>"Send Invitation"</strong>.
 <br/>
