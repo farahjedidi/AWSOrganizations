@@ -82,12 +82,16 @@ In this demo, we will set up an AWS Organization using the <strong>GENERAL</stro
 4. Set a display name (e.g., "PROD") and a color (e.g., Red).
 5. Click <strong>Create</strong> / <strong>Switch Role</strong>.
 <br/>
+
 ![Screenshot](https://imgur.com/4u4Xv7h.png)
+
 <br/>
 
 7. We will now see the display name "PROD" in the top right menu. We can switch back to the GENERAL account as needed.
 <br/>
+
 ![Screenshot](https://imgur.com/UYH7v4W.png)
+
 <br/>
 
 ### <h3>5. Create a New Account in the Organization</h3>
@@ -97,12 +101,14 @@ In this demo, we will set up an AWS Organization using the <strong>GENERAL</stro
 <br/>
 
 ![Screenshot](https://imgur.com/8DRzMRE.png)
+
 <br/>
 
 4. Switch to the new account by going to the main dropdown > <strong>Switch Role</strong> > enter the new account ID > use the same role name `OrganizationAccountAccessRole` > click <strong>Switch Role</strong>.
 <br/>
 
 ![Screenshot](https://imgur.com/alYixAi.png)
+
 <br/>
 
 ## <h2>Conclusion</h2>
